@@ -1,0 +1,156 @@
+<resources>
+    <string name="app_name">JMAS Lecturas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    //pasta
+    <string name="pastaIngredients">Concepto Uno
+        \nDescripción uno
+        \nDescripción dos
+        \nDescripción tres
+        \nDescripción cuatro
+        \nDescripción cinco
+    </string>
+
+    <string name="pastaDesc">
+        Cook your pasta until al dente
+        \nSaute’ garlic in olive oil until fragrant
+        \nAdd cream cheese, pasta cooking water, parmesan, and stir well
+        \nDrain and add pasta to the skillet
+        \nToss until well combined, adding some pasta water if needed
+    </string>
+
+    <string name="selecciona_sexo">Selecciona sexo</string>
+    <string-array name="opciones_sexo">
+        <item>No Seleccionado</item>
+        <item>Femenino (F)</item>
+        <item>Masculino (M)</item>
+    </string-array>
+
+
+    //maggi
+    <string name="maggiIngredients">Maggi Noodles
+            \nWater
+            \nMaggi Masala
+        </string>
+    <string name="maggieDesc">
+            Add one and half cup of water
+            \nAdd maggi noodles and boil it
+            \nAdd the maggi masala on to it
+            \nWait for 2 mins
+            \nMaggi is ready!
+        </string>
+
+    //cake
+    <string name="cakeIngredients">
+            Maggi Noodles
+            \nWater
+            \nMaggi Masala
+        </string>
+    <string name="cakeDesc">
+            Add one and half cup of water
+            Add maggi noodles and boil it
+            Add the maggi masala on to it
+            \nWait for 2 mins
+            \nMaggi is ready!
+        </string>
+
+    //pancake
+    <string name="pancakeIngredients">
+            Maggi Noodles
+            \nWater
+            \nMaggi Masala
+        </string>
+    <string name="pancakeDesc">
+            Add one and half cup of water
+            Add maggi noodles and boil it
+            Add the maggi masala on to it
+            \nWait for 2 mins
+            \nMaggi is ready!
+        </string>
+
+    //pizza
+    <string name="pizzaIngredients">
+            Maggi Noodles
+            \nWater
+            \nMaggi Masala
+        </string>
+    <string name="pizzaDesc">
+            Add one and half cup of water
+            Add maggi noodles and boil it
+            Add the maggi masala on to it
+            \nWait for 2 mins
+            \nMaggi is ready!
+        </string>
+
+    //burgers
+    <string name="burgerIngredients">
+            Maggi Noodles
+            \nWater
+            \nMaggi Masala
+        </string>
+    <string name="burgerDesc">
+            Add one and half cup of water
+            \nAdd maggi noodles and boil it
+            \nAdd the maggi masala on to it
+            \nWait for 2 mins
+            \nMaggi is ready!
+        </string>
+
+    //fries
+    <string name="friesIngredients">
+            Maggi Noodles
+            \nWater
+            \nMaggi Masala
+        </string>
+    <string name="friesDesc">
+            Add one and half cup of water
+            \nAdd maggi noodles and boil it
+            \nAdd the maggi masala on to it
+            \nWait for 2 mins
+            \nMaggi is ready!
+        </string>
+
+    <string name="nombre_de_usuario">NOMBRE DE USUARIO</string>
+    <string name="descripci_n_del_usuario">Descripción del usuario</string>
+    <string name="preferencias">Preferencias</string>
+    <string name="permitir_notificaciones">Permitir notificaciones</string>
+    <string name="linea">_</string>
+    <string name="informacion">Información</string>
+    <string name="aviso_de_privacidad">Aviso de privacidad</string>
+    <string name="calificanos">Calificanos</string>
+    <string name="actualizar_contrase_a">Actualizar contraseña</string>
+    <string name="acerca_de">Acerca de</string>
+    <string name="acerca_de_nosotros">Acerca de nosotros</string>
+    <string name="configuraci_n_de_sesi_n">Configuración de sesión</string>
+    <string name="cambiar_contrase_a">Cambiar contraseña</string>
+    <string name="nombre_ejemplo">Nombre ejemplo</string>
+    <string name="campo_uno">Campo uno:</string>
+    <string name="agregar_campo_uno">Agregar campo uno</string>
+    <string name="campo_dos">Campo dos:</string>
+    <string name="agregar_campo_dos">Agregar campo dos</string>
+    <string name="campo_tres">Campo tres:</string>
+    <string name="opcion_uno">Opcion uno</string>
+    <string name="opcion_dos">Opcion dos</string>
+    <string name="opcion_tres">Opcion tres</string>
+    <string name="campo_cuatro">Campo cuatro:</string>
+    <string name="agregar_campo_cuatro">Agregar campo cuatro</string>
+    <string name="enviar_datos">Enviar datos</string>
+    <string name="imagen_ejemplo">Imagen ejemplo</string>
+    <string name="inicio_de_sesi_n">Inicio de sesión</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="entrar">Entrar</string>
+    <string name="problemas_de_ingreso_da_click_aqu"><u>Problemas de ingreso, da click aquí</u></string>
+    <string name="icon_ejemplo">icon ejemplo</string>
+    <string name="crear">Crear</string>
+    <string name="subir_video">Subir video</string>
+    <string name="crear_un_short">Crear un Short</string>
+    <string name="haz_un_live">Haz un live</string>
+    <string name="contrase_a_actual">contraseña actual</string>
+    <string name="nueva_contrase_a">nueva contraseña</string>
+    <string name="confirmar_nueva_contrase_a">confirmar nueva contraseña</string>
+    <string name="nombre">Nombre</string>
+    <string name="ejemplo_de_lo_que_se_encontraria_en_descripci_n">Ejemplo de lo que se encontraria en descripción</string>
+
+
+</resources>

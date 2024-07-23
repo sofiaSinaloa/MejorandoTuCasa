@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Ingreso"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:icon="@drawable/baseline_search_24"
+        android:id="@+id/itemBusquedaToolbarMenu" />
+    <item
+        android:title="Agregar"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:icon="@drawable/baseline_person_add_24"
+        android:id="@+id/itemAgregarToolbarMenu" />
+    <item
+        android:title="Reiniciar"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:icon="@drawable/baseline_cached_24"
+        android:id="@+id/itemReiniciarToolbarMenu" />
+    <!---<item
+        android:title="Dispositivos"
+        android:id="@+id/linked" />
+    <item
+        android:title="Configuración"
+        android:id="@+id/settings" />-->
+
+</menu>

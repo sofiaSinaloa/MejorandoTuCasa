@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OpcionesClave"
+    android:background="@color/grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarOpcionesClave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Azul_Pantone_654_C"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        app:popupTheme="@style/Theme.AppCompat.Light"
+        app:title="Claves"
+        app:titleTextColor="@color/white"
+        app:titleMarginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:foregroundTint="@color/white"
+        tools:ignore="MissingConstraints"/>
+
+
+    <ListView
+        android:id="@+id/listviewOpcionesClave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5.0sp"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarOpcionesClave"
+        tools:layout_editor_absoluteX="35dp"
+        tools:listitem="@layout/list_item_opciones_clave" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

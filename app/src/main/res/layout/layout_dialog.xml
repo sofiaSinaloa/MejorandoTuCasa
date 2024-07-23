@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edit_contraseñaactual"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/contrase_a_actual"
+        android:autofillHints="ejemplo"
+        android:inputType="" />
+
+    <EditText
+        android:id="@+id/edit_cambiarcontraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_contraseñaactual"
+        android:layout_alignParentStart="true"
+        android:hint="@string/nueva_contrase_a"
+        android:layout_marginTop="15dp"
+        android:autofillHints="ejemplo"
+        android:inputType="" />
+
+    <EditText
+        android:id="@+id/edit_confirmarcambiarcontraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_cambiarcontraseña"
+        android:layout_alignParentStart="true"
+        android:hint="@string/confirmar_nueva_contrase_a"
+        android:layout_marginTop="15dp"
+        android:autofillHints="ejemplo"
+        android:inputType="" />
+</RelativeLayout>

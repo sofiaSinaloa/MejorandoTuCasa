@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginVertical="20dp"
+    android:layout_marginHorizontal="30dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/CardView.Dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/listImageListItem"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/imagen"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listNameListItem"
+            android:text="@string/nombre"
+            android:textColor="@color/Azul_Pantone_654_C"
+            android:textSize="17sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/listImageListItem"/>
+
+        <TextView
+            android:id="@+id/listDescListItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_toEndOf="@id/listImageListItem"
+            android:text="@string/ejemplo_de_lo_que_se_encontraria_en_descripci_n"
+            android:textColor="@color/Azul_Pantone_654_C"
+            android:textSize="13sp" />
+
+        <!--<TextView
+            android:id="@+id/listTime"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
+            android:text="time"
+            android:textColor="@color/Azul_Pantone_654_C"
+            android:textSize="16sp" />-->
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

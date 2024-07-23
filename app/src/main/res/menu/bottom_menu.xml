@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/IconoInicioBottomMenu"
+        android:title="Inicio"
+        android:iconTint="@color/Azul_Pantone_654_C"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/perfil"
+        android:title="Perfil"
+        android:icon="@drawable/baseline_person_24"
+        />
+
+    <!--<item
+        android:id="@+id/shorts"
+        android:title="Shorts"
+        android:icon="@drawable/ic_baseline_whatshot_24"
+        />
+
+    <item
+        android:title=""/>
+
+    <item
+        android:id="@+id/subscriptions"
+        android:title="Subscripciones"
+        android:icon="@drawable/ic_baseline_subscriptions_24" />
+    <item
+        android:id="@+id/library"
+        android:title="Libreria"
+        android:icon="@drawable/ic_baseline_video_library_24" />-->
+
+
+
+</menu>

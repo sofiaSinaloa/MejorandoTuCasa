@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detailed"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDetailedEntradas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Azul_Pantone_654_C"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Registro nuevo"
+        app:titleTextColor="@color/white"
+        app:titleMarginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:foregroundTint="@color/white"
+        tools:ignore="MissingConstraints"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarDetailedEntradas">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Datos personales del usuario"
+                android:textColor="@color/Azul_Pantone_654_C"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Ingresa CURP *"
+                android:textColor="@color/Azul_Pantone_654_C"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextCurp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="25dp"
+                android:hint="CURP"
+                android:inputType="textCapCharacters"
+                android:maxLength="18"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Azul_Pantone_654_C" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Ingresa RFC"
+                android:textColor="@color/Azul_Pantone_654_C"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextRfc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="25dp"
+                android:ems="10"
+                android:hint="RFC"
+                android:autofillHints=""
+                android:inputType="textCapCharacters"
+                android:maxLength="13"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Azul_Pantone_654_C"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Ingresa nombre(s) *"
+                android:textColor="@color/Azul_Pantone_654_C"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="25dp"
+                android:ems="10"
+                android:hint="NOMBRE"
+                android:autofillHints=""
+                android:inputType="textCapCharacters"
+                android:maxLength="50"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Azul_Pantone_654_C"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Ingresa apellido paterno *"
+                android:textColor="@color/Azul_Pantone_654_C"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextPaterno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="25dp"
+                android:ems="10"
+                android:hint="APELLIDO PATERNO"
+                android:autofillHints=""
+                android:inputType="textCapCharacters"
+                android:maxLength="50"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Azul_Pantone_654_C"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Ingresa apellido materno"
+                android:textColor="@color/Azul_Pantone_654_C"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextMaterno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="25dp"
+                android:ems="10"
+                android:hint="APELLIDO MATERNO"
+                android:autofillHints=""
+                android:inputType="textCapCharacters"
+                android:maxLength="50"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Azul_Pantone_654_C"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Ingresa Edad *"
+                android:textColor="@color/Azul_Pantone_654_C"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextEdad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="25dp"
+                android:hint="EDAD"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Azul_Pantone_654_C" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Ingresa Sexo"
+                android:textColor="@color/Azul_Pantone_654_C"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <Spinner
+            android:id="@+id/spinnerSexo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="25dp" android:overlapAnchor="false"
+            android:textColor="@color/black"
+            android:textColorHint="@color/Azul_Pantone_654_C" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Ingresa numero de telefono"
+                android:textColor="@color/Azul_Pantone_654_C"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/editTextTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="25dp"
+                android:ems="10"
+                android:hint="TELÉFONO A 10 DÍGITOS"
+                android:autofillHints=""
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Azul_Pantone_654_C"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Ingresa la colonia *"
+                android:textColor="@color/Azul_Pantone_654_C"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextColonia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="25dp"
+                android:ems="10"
+                android:hint="COLONIA"
+                android:autofillHints=""
+                android:inputType="textCapCharacters"
+                android:maxLength="70"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Azul_Pantone_654_C"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Ingresa la calle *"
+                android:textColor="@color/Azul_Pantone_654_C"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextCalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="25dp"
+                android:ems="10"
+                android:hint="CALLE"
+                android:autofillHints=""
+                android:inputType="textCapCharacters"
+                android:maxLength="70"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Azul_Pantone_654_C"/>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="15dp"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ingresa el numero interior"
+                        android:textColor="@color/Azul_Pantone_654_C"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editTextNumInt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="N. INTERIOR"
+                        android:autofillHints=""
+                        android:inputType="textCapCharacters"
+                        android:maxLength="50"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/Azul_Pantone_654_C"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ingresa el numero exterior *"
+                        android:textColor="@color/Azul_Pantone_654_C"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editTextNumExt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="N. EXTERIOR"
+                        android:autofillHints=""
+                        android:inputType="textCapCharacters"
+                        android:maxLength="50"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/Azul_Pantone_654_C"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/Azul_Pantone_654_C"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutAcercaDeConfiguracion" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Datos de la vivienda"
+                android:textColor="@color/Azul_Pantone_654_C"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Ingresa los metros de la vivienda *"
+                android:textColor="@color/Azul_Pantone_654_C"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextMetros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="25dp"
+                android:ems="10"
+                android:hint="METROS"
+                android:autofillHints=""
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Azul_Pantone_654_C"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Ingresa el color de la vivienda"
+                android:textColor="@color/Azul_Pantone_654_C"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="25dp"
+                android:ems="10"
+                android:hint="COLOR"
+                android:autofillHints=""
+                android:inputType="textCapCharacters"
+                android:maxLength="50"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Azul_Pantone_654_C"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/Azul_Pantone_654_C"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutAcercaDeConfiguracion" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Fotografías"
+                android:textColor="@color/Azul_Pantone_654_C"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Identificación Oficial de frente "
+                        android:textColor="@color/Azul_Pantone_654_C"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/advFotoIdentificacionFrente"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/baseline_camera_alt_24" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/advFotoUpdate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="15dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Identificación Oficial de reverso"
+                        android:textColor="@color/Azul_Pantone_654_C"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/advFotoIdentificacionReverso"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/baseline_camera_alt_24" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/advFotoUpdate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="15dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comprobante de Domicilio"
+                        android:textColor="@color/Azul_Pantone_654_C"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/advFotoComprobanteDomicilio"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/baseline_camera_alt_24" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/advFotoUpdate3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="15dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fachada Antes"
+                        android:textColor="@color/Azul_Pantone_654_C"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/advFotoFachadaAntes"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/baseline_camera_alt_24" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/advFotoUpdate5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="15dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Firma Digital"
+                        android:textColor="@color/Azul_Pantone_654_C"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/advFotoAnuenciaTrabajo"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/baseline_border_color_24" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/advFotoUpdate4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="15dp"
+                android:layout_gravity="center" />
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/Azul_Pantone_654_C"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutAcercaDeConfiguracion" />
+
+            <Button
+                android:id="@+id/enviarBeneficiarioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/Azul_Pantone_654_C"
+                android:gravity="end"
+                android:text="@string/enviar_datos"
+                android:textSize="18sp"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

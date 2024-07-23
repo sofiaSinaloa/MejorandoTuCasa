@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:importantForAccessibility="no"
+            android:src="@drawable/img"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="47dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_edittext"
+                    app:cardCornerRadius="05dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="24dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ingresa tu usuario y contraseña para acceder a la plataforma."
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <EditText
+                            android:id="@+id/EditTextUsuarioLogin"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="15dp"
+                            android:drawableStart="@drawable/baseline_person_24"
+                            android:drawablePadding="8dp"
+                            android:hint="usuario"
+                            android:padding="8dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/cardview_dark_background"
+                            android:textColorHint="@color/Grey_Pantone_CoolGrey_10_C"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/EditTextContraseñaLogin"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:drawableStart="@drawable/baseline_lock_24"
+                            android:drawablePadding="8dp"
+                            android:hint="contraseña"
+                            android:inputType="textPassword"
+                            android:padding="8dp"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/cardview_dark_background"
+                            android:textColorHint="@color/Grey_Pantone_CoolGrey_10_C"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/TextViewErrorLogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text=""
+                            android:textAllCaps="false"
+                            android:textColor="@color/red"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/ButtonInicioSesionLogin"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_marginTop="25dp"
+                            android:backgroundTint="@color/Azul_Pantone_654_C"
+                            android:text="Ingresar"
+                            android:textSize="15sp"
+                            app:cornerRadius="05dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/TextViewProblemasLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:autoLink=""
+                    android:clickable="true"
+                    android:fontFamily="sans-serif"
+                    android:padding="9dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Dudas e información sobre la aplicación"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="italic|bold" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

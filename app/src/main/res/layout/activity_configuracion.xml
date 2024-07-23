@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".Configuracion">
+
+    <FrameLayout
+        android:id="@+id/frame_layoutConfiguracion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarConfiguracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/white"
+        android:background="@color/Azul_Pantone_654_C"
+        app:layout_constraintTop_toTopOf="@+id/frame_layoutConfiguracion"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Configuración"
+        app:titleMarginStart="30dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarConfiguracion">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewConfiguracion"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="24dp"
+                android:elevation="12dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintTop_toTopOf="@+id/toolbarConfiguracion"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                style="@style/CardView.Dark">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textViewNomUsuConfiguracion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/nombre_de_usuario"
+                        android:textAllCaps="true"
+                        android:textColor="@color/Azul_Pantone_654_C"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textViewDescUsuConfiguracion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/descripci_n_del_usuario"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="@+id/textViewNomUsuConfiguracion"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewNomUsuConfiguracion" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/preferenciasTituloConfiguracion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="20sp"
+                android:text="@string/preferencias"
+                android:textColor="@color/Azul_Pantone_654_C"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutPermitirNotificaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="10dp"
+
+                android:weightSum="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/preferencias">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/permitir_notificaciones"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/switchPermitirNotificaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/Azul_Pantone_654_C"
+                    android:textSize="8sp"
+                    tools:ignore="SmallSp,UseSwitchCompatOrMaterialXml" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/Azul_Pantone_654_C"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutAcercaDeConfiguracion" />
+
+            <TextView
+                android:id="@+id/informaciónTitutloConfiguracion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20sp"
+                android:text="@string/informacion"
+                android:textColor="@color/Azul_Pantone_654_C"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line1"
+                tools:ignore="MissingConstraints"
+                />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutInformacionConfiguracion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical"
+                android:weightSum="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/información"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/TextViewAvisoDePrivacidadConfiguracion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/aviso_de_privacidad"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoutAcercaDeConfiguracion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextViewAcercaDeConfiguracion">
+
+                <TextView
+                    android:id="@+id/TextViewAcercaDeNosotrosConfiguracion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/acerca_de_nosotros"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/Azul_Pantone_654_C"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutAcercaDeConfiguracion" />
+
+
+            <TextView
+                android:id="@+id/TextViewConfiguracionSesionConfiguracion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20sp"
+                android:text="@string/configuraci_n_de_sesi_n"
+                android:textColor="@color/Azul_Pantone_654_C"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lineaTresConfiguracion"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutConfiguracionDeSesionConfiguracion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:clickable="true"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextViewConfiguracionSesionConfiguracion">
+
+                <TextView
+                    android:id="@+id/textViewCerrarSesion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Cerrar sesión"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:visibility="visible"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

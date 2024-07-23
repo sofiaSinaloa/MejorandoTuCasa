@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Configuración"
+        android:id="@+id/itemConfiguracionToolbarMenu" />
+    <item
+        android:title="Cerrar sesión"
+        android:id="@+id/itemCerrarSesionToolbarMenu" />
+    <!---<item
+        android:title="Dispositivos"
+        android:id="@+id/linked" />
+    <item
+        android:title="Configuración"
+        android:id="@+id/settings" />-->
+</menu>
